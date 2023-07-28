@@ -1,0 +1,166 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    /* background: repeating-linear-gradient(); */
+    background: repeating-linear-gradient(rgba(0,0,0,0),rgba(0, 0, 0, 0.7));
+}
+.boxs{
+    width: 430px;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: solid 1px black;
+    box-sizing: border-box; */
+}
+.box{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px rgb(40, 39, 39);
+    box-sizing: border-box;
+
+    box-shadow: 0px 0px 2px;
+}
+.box:hover{
+    border: solid 2px black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.orange{
+    background-color: orange;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.brown{
+    background-color: brown;
+}
+.pink{
+    background-color: pink;
+}
+.skyblue{
+    background-color: skyblue;
+}
+.hidden{
+    background-color: #f0f0f0;
+}
+.done:hover{
+    cursor: default;
+    box-shadow: none;
+    /* background-color: black; */
+}
+#score{
+    margin-top: 1rem;
+    text-align: right;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    margin-left: 5%;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(43, 157, 43, 0.962);
+    transition: .3s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px;
+    transition: 0.5s;
+
+}
+button:hover{
+    background-color: green;
+    color: white;
+}
+button:active{
+    background-color: rgb(35, 101, 35);
+}
+.gameOver{
+    text-align: center;
+}
+.overMsg{
+    color: red;
+    font-size: 25px;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+}
+
+@media only screen and (max-width:600px){
+    .boxs{
+        width: 260px;
+        height: 260px;
+    }
+    .box{
+        width: 60px;
+        height: 60px;
+    }
+    .overMsg{
+        color: red;
+        font-size: 15px;
+    }
+    #score{
+        margin-top: 0px;
+        text-align: left;
+        font-size: 15px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    button{
+        width: 120px;
+        height: 40px;
+        margin-left: 5%;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+    .gameOver{
+        text-align: center;
+        overflow: hidden;
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:350px) {
+    .boxs{
+        width: 210px;
+        height: 210px;
+    }
+    .box{
+        width: 50px;
+        height: 50px;
+    }
+    .gameOver{
+        text-align: center;
+        font-size: 8px;
+    }
+    .overMsg{
+        color: red;
+        font-size: 10px;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        margin-left: 5%;
+        margin-bottom: 20px;
+        font-size: 8px;
+    }
+    #score{
+        font-size: 12px;
+        margin: 2px;
+    }
+}
